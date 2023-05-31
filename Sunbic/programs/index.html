@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SunBic</title>
+    <link rel="icon" href="pic/chocs.png">
+</head>
+<body>
+    <!-- Header -->
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <a href="#" class="logo">
+            <h1>SUNBIC</h1>
+        </a>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#"  id="current-nav">Programs</a></li>
+            <li><a href="../about/index.html">About</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+            <li><a onclick="togglePopup()" id="login">Login</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+        <!-- Home Banner -->
+        <section class="home">
+            <div class="content">
+                <h4>Explore SUNBIC Programs</h4>
+                <h3>We offer something for every interest</h3>
+            </div>
+        </section>
+        <!-- Programs -->
+        <section class="program">
+            <h3>Undergraduate Programs</h3>
+            <h2>Accounting & Finance</h2>
+            <hr>
+            <div class="box-container">
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Accounting">Accounting</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Taxation_in_Indonesia">Taxation</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Finance">Finance</a></li>
+                </div>
+            </div>
+            <h2>Art & Design</h2>
+            <hr>
+            <div class="box-container">
+                <div class="box">
+                    <li><a target="_blank" href="https://id.wikipedia.org/wiki/Desain_komunikasi_visual">Visual Communication Design</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Film">Film</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Interior_design">Interior Design</a></li>
+                </div>
+            </div>
+            <h2>Business</h2>
+            <hr>
+            <div class="box-container">
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Management">Management</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Business_marketing">Business Marketing</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Entrepreneurship">Entrepreneurship</a></li>
+                </div>
+            </div>
+            <h2>Computing</h2>
+            <hr>
+            <div class="box-container">
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Data_science">Data Science</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Computer_security">Cyber Security</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Information_system">Information Systems</a></li>
+                </div>
+                <div class="box">
+                    <li><a  target="_blank" href="https://en.wikipedia.org/wiki/Business_analytics">Business Analytics</a></li>
+                </div>
+            </div>
+            <h2>Humanities</h2>
+            <hr>
+            <div class="box-container">
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Psychology">Psychology</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/Law">Law</a></li>
+                </div>
+                <div class="box">
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/International_relations">International Relations</a></li>
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        </div>
+        <ul class="list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="../about/index.html">About</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+            <li><a onclick="togglePopup()" style="cursor: pointer;">Login</a></li>
+        </ul>
+        <p class="copyright">Sunbic @ 2022</p>
+    </footer>
+    <!-- Login -->
+    <div class="popup" id="popup-1">
+        <div class="content-sn">
+        <div class="close-btn" onclick="togglePopup()">
+        ×
+        </div>
+        <div id="loginpage">
+            <div id="loginpage2">
+                <h1 id="login-text">Login</h1> 
+                <form class="login_form" name="form" onsubmit="">
+                    <div class="input-field">
+                        <input type="text" id="email-id" placeholder="Email" class="validate" required> 
+                        <input type="password" id="password-id" placeholder="Password" class="validate" required>
+                    </div>
+                    <button id="sign-in-btn" class="second-button" onclick="validate()">Login</button>
+                    <p id="login-text">Don't have an account? <a id="register"href="Signup.html">Register</a></p>
+                </form> 
+            </div>
+        </div>
+    </div>
+
+    <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SunBic</title>
+    <link rel="icon" href="pic/chocs.png">
+</head>
+<body>
+    <!-- Header -->
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <a href="#" class="logo">
+            <h1>SUNBIC</h1>
+        </a>
+        <ul class="links">
+            <li><a href="#" id="current-nav">Home</a></li>
+            <li><a href="./programs/index.html">Programs</a></li>
+            <li><a href="./about/index.html">About</a></li>
+            <li><a href="./contact/index.html">Contact</a></li>
+            <li><a onclick="togglePopup()" id="login">Login</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+        <!-- Home Banner -->
+        <section class="home">
+            <div class="content">
+                <h4>WELCOME TO</h4>
+                <h3>Sunbic University</h3>
+                <a href="./programs/index.html" class="home-btn">EXPLORE OUR PROGRAMS AND COURSES</a>
+            </div>
+        </section>
+        <!-- Slogan/visi -->
+        <section class="text-slogan">
+            <div class="text-content" id="text-content">
+                <h2>Your new career starts with us.</h2>
+                <p>We offer extensive and rewarding hands-on learning experiences that increase employment success. We know that by supporting the whole learner we can make your <br> learning count and give you the relevant skills and competencies you need for the job market of today and the future. We offer upgrading, cutting edge learning labs and <br> shorter programs with faster results. We open doors and minds to make sure you are ready for your new career.</p>
+                <a href="./programs/index.html">
+                  <p class="btn">EXPLORE OUR PORGRAMS AND COURSES</p>
+                </a>
+            </div>
+        </section>
+        <div class="image">
+        </div>
+        <!-- Partnership -->
+        <section class="partnership" id="partnership">
+            <h2>Cooperation Company</h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="./pic/google.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./pic/microsoft.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./pic/bca.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./pic/meta.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./pic/cisco.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./pic/tokopedia.png" alt="">
+                </div>
+            </div>
+            <h2>Coorperation University</h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="./pic/binus.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./pic/oxford.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./pic/hogwart.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        </div>
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="./programs/index.html">Programs</a></li>
+            <li><a href="./about/index.html">About</a></li>
+            <li><a href="./contact/index.html">Contact</a></li>
+            <li><a onclick="togglePopup()" style="cursor: pointer;">Login</a></li>
+        </ul>
+        <p class="copyright">Sunbic @ 2022</p>
+    </footer>
+    <!-- Login -->
+    <div class="popup" id="popup-1">
+        <div class="content-sn">
+        <div class="close-btn" onclick="togglePopup()">
+        ×
+        </div>
+        <div id="loginpage">
+            <div id="loginpage2">
+                <h1 id="login-text">Login</h1> 
+                <form class="login_form" name="form" onsubmit="">
+                    <div class="input-field">
+                        <input type="text" id="email-id" placeholder="Email" class="validate" required> 
+                        <input type="password" id="password-id" placeholder="Password" class="validate" required>
+                    </div>
+                    <button id="sign-in-btn" class="second-button" onclick="validate()">Login</button>
+                    <p id="login-text">Don't have an account? <a id="register"href="Signup.html">Register</a></p>
+                </form> 
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
